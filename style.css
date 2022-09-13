@@ -29,3 +29,8 @@ body, html {
     font-size: 2.5em;
     vertical-align: middle;
 }
+
+#footer {
+    font-style: italic;
+    font-size: smaller;
+}
