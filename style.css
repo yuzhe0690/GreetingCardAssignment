@@ -2,7 +2,7 @@ body, html {
     height: 100%;
 }
 
-#banner_home {
+.banner_home {
     background-image: url("home banner.jpg");
     
     display: table;
@@ -17,7 +17,7 @@ body, html {
     background-size: cover;
 }
 
-#nav a {
+.nav a {
     font-size: 0.7em;
     color: white;
 }
@@ -30,7 +30,18 @@ body, html {
     vertical-align: middle;
 }
 
-#footer {
+h2 {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer {
     font-style: italic;
     font-size: smaller;
 }
