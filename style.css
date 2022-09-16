@@ -2,8 +2,15 @@ body, html {
     height: 100%;
 }
 
+a {
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
 h1 {
-    font-size: 2.5em;
+    font-size: 2.25em;
     text-align: center;
 }
 
@@ -13,6 +20,7 @@ h2 {
 }
 
 p {
+    font-size: 1.25em;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -27,6 +35,8 @@ td {
     padding-bottom: 20%;
     overflow-x: auto;
     overflow-y: auto;
+    box-sizing: border-box;
+    flex-shrink: 1;
 }
 
 .banner_home {
@@ -44,17 +54,67 @@ td {
     background-size: cover;
 }
 
-.nav a {
-    font-size: 0.7em;
-    color: white;
-}
-
 .header {
     display: table-cell;
     color:white;
     text-align: center;
     font-size: 2.5em;
     vertical-align: middle;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    opacity: 75%;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1%;
+    width: 12%;
+    height: 20%;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    position: relative;
+    transition: 0.5s;
+    
+}
+  
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.btn:hover {
+    background-color: orange;
+    box-sizing: border-box;
+}
+
+.home_fact {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home_content {
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 1;
 }
 
 .template_option {
@@ -66,4 +126,9 @@ td {
 .footer {
     font-style: italic;
     font-size: smaller;
+}
+
+/* Responsive Design for Screen width lesser than 800 px*/
+@media only screen and (max-device-width: 800px)  {
+    
 }
