@@ -22,8 +22,9 @@ h2 {
 p {
     font-size: 1.25em;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 td {
@@ -133,6 +134,14 @@ td {
 
 /* Responsive Design for Screen width lesser than 800 px*/
 @media only screen and (max-device-width: 800px)  {
+    p {
+        font-size: 1.25em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
     .btn {
         display: inline-block;
         border-radius: 4px;
