@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Template 3 </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="flex-container"> <!--Flex Container-->
+            <div> Home </div>
+            <div> Sent A Message </div>
+        </div>
+
+
+        <h1> Template 3 Preview</h1>
+
+        <br>
+
+        <label for="userText"> Enter Message Here: </label>
+        <br>
+        <textarea id="userText" name="userText" rows="4" cols="50"> Enter your message here</textarea>
+        <!-- <input type="text" id="userText" name="userText"><br><br> -->
+
+        <br>
+        <!-- <input type="submit" value="Submit"> -->
+        <br>
+
+        <image src="Mid-Autumn Web Design 1.png" alt="Design Preview Here" class="responsive">
+
+            <br>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <i>
+                Copyright &copy; 2022 Sunway University | Made By: Chong Yu Cheng 15079395 &amp; Ch'ng Khye Ahn 15085111
+                (2212-WEB1201 G2)
+            </i>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: orangered;
+        
+    }
+
+    .flex-container>div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 800px) {
+        .flex-container {
+            flex-direction: row;
+        }
+</style>
