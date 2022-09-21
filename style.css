@@ -38,6 +38,7 @@ td {
     overflow-y: auto;
     box-sizing: border-box;
     flex-shrink: 1;
+    font-size: 1.3em;
 }
 
 #banner_home {
@@ -120,6 +121,53 @@ td {
 .template_option {
     margin-left: auto;
     margin-right: auto;
+}
+
+.image_container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.image_container:hover .image {
+    opacity: 0.3;
+}
+  
+.image_container:hover .middle {
+    opacity: 1;
+}
+  
+.btn_2{
+    text-align: center;
+    opacity: 0.75;
+    background-color: orange;
+    color: white;
+    font-size: 1.25em;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box
 }
 
 .to_top {
