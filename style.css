@@ -3,6 +3,7 @@ body, html {
 }
 
 a {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 0.7em;
     color: white;
     text-align: center;
@@ -10,17 +11,20 @@ a {
 }
 
 h1 {
+    font-family: Consolas, monaco, monospace;
     font-size: 2.25em;
     text-align: center;
 }
 
 h2 {
+    font-family: Consolas, monaco, monospace;
     font-size: 1.75em;
     text-align: center;
 }
 
 p {
-    font-size: 1.25em;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 1.2em;
     text-align: justify;
     margin-left: auto;
     margin-right: auto;
@@ -28,6 +32,7 @@ p {
 }
 
 td {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     display: block;
     text-align: center;
     margin-left: auto;
@@ -38,7 +43,7 @@ td {
     overflow-y: auto;
     box-sizing: border-box;
     flex-shrink: 1;
-    font-size: 1.3em;
+    font-size: 1.25em;
 }
 
 #banner_home {
@@ -177,7 +182,8 @@ td {
 
 .footer {
     font-style: italic;
-    font-size: smaller;
+    font-family: Consolas, monaco, monospace;
+    font-size: 0.75em;
 }
 
 /* Responsive Design for Screen width lesser than 800 px*/
