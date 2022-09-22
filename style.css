@@ -185,6 +185,22 @@ td {
     font-family: Consolas, monaco, monospace;
     font-size: 0.75em;
 }
+/* For flex containers inside the 3 template boxes to sent a message */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+
+}
+
+.flex-container>div {
+    background-color: black;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
 
 /* Responsive Design for Screen width lesser than 800 px*/
 @media only screen and (max-device-width: 800px)  {
