@@ -12,7 +12,7 @@ a {
 
 h1 {
     font-family: Consolas, monaco, monospace;
-    font-size: 2.25em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -69,6 +69,23 @@ td {
     vertical-align: middle;
 }
 
+/* For flex containers inside the 3 template boxes to sent a message */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+
+}
+
+.flex-container>div {
+    background-color: black;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
 .btn {
     display: inline-block;
     border-radius: 4px;
@@ -123,6 +140,13 @@ td {
     flex-shrink: 1;
 }
 
+.responsive_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
 .template_option {
     margin-left: auto;
     margin-right: auto;
@@ -138,8 +162,7 @@ td {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    height: auto;
+    width: auto;
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -167,12 +190,19 @@ td {
     text-align: center;
     opacity: 0.75;
     background-color: orange;
-    color: white;
     font-size: 1.25em;
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box
+}
+
+.home_card p {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .to_top {
@@ -184,22 +214,6 @@ td {
     font-style: italic;
     font-family: Consolas, monaco, monospace;
     font-size: 0.75em;
-}
-/* For flex containers inside the 3 template boxes to sent a message */
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: orangered;
-
-}
-
-.flex-container>div {
-    background-color: black;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
 }
 
 /* Responsive Design for Screen width lesser than 800 px*/
@@ -230,5 +244,16 @@ td {
         margin-right: 1%;
         font-size: 0.6em;
         flex-shrink: 1;
+    }
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .responsive_center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 }
