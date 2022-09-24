@@ -278,3 +278,40 @@ td {
         backface-visibility: hidden;
     }
 }
+
+/*Added Stuff For Templates Pages*/
+.userInputs {
+    color: black;
+    text-align: center;
+}
+
+.message {
+    rows: 5;
+    columns: 75;
+    width: 50%;
+    font-size: 24px;
+    color: black;
+}
+
+.templateImage {
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.display {
+    border-collapse: collapse;
+    width: 25%;
+    background-color: coral;
+    border: 2px solid black;
+    padding: 3px;
+    color: black;
+}
+
+.display {
+    margin-left: auto;
+    margin-right: auto;
+}
