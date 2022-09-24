@@ -1,4 +1,5 @@
 body, html {
+    margin: 0%;
     height: 100%;
 }
 
@@ -52,7 +53,7 @@ td {
     display: table;
     margin-left: auto;
     margin-right: auto;
-    min-height: 39em;
+    height: 100%;
     width: 100%;
 
     background-attachment: fixed;
@@ -225,6 +226,16 @@ td {
         margin-right: auto;
         width: 80%;
     }
+
+    #banner_home {
+        background-image: url("home banner.jpg");
+        
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        width: 100%;
+    }
     
     .btn {
         display: inline-block;
@@ -255,5 +266,15 @@ td {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        transition: .5s ease;
+        backface-visibility: hidden;
     }
 }
