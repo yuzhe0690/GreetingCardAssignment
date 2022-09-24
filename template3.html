@@ -18,37 +18,31 @@
     </header>
     
     <main>
-        <div class="flex-container">
-            <!--Flex Container-->
-            <div> <a href="Main.html"> Home </a></div>
-            <div> <a href="message.html"> Sent A Message </a> </div>
-        </div>
-
-
         <h1> Contemporary Festive Card II </h1>
 
         <br>
 
-        <form id="form3" action="/action_page.php">
-            Message: <input type="text" placeholder="Enter Your Message" required>
-            
-            <br>
-            <input type="button" onclick="myForm()" value="Submit">
-        </form>
+        <div id="userInputs" class="userInputs">
+            <div> Mesage: <textarea id="message" class="message" placeholder="Enter Your Message Here" required></textarea></div>
+            <button id="submit"> submit </button>
+        </div>
 
-        <!-- <script>
-            function placeOrder(myForm) {
-                document.getElementById(myForm).submit();
-            }
-        </script> -->
+
+
+        <div>
+            <h2> Original Image Preview </h2>
+            <img src="rsz_temp3.png" alt="Design Preview Here" class="image">
+        </div>
+    
+        <p class="userInputs"> Text that would be submitted BELOW</p>
+
+        <table id="display" class="display">
+
+        </table>
+        <!-- Script to print message -->
+        <script src="javascript.js"></script>
 
         <br>
-
-        <p> Text that would be submitted </p>
-
-        <image src="rsz_temp3.png" alt="Design Preview Here" class="responsive">
-
-            <br>
 
     </main>
 
