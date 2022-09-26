@@ -73,7 +73,7 @@ td {
 }
 
 /* For flex containers inside the 3 template boxes to sent a message */
-.flex-container {
+#flex-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -82,12 +82,16 @@ td {
 
 }
 
-.flex-container>div {
+#flex-container>div {
     box-sizing: border-box;
-    background-color: black;
+    background-color: #ffdb99;
     margin: 1%;
     padding: 1%;
     font-size: 2em;
+}
+
+#flex-container>div a {
+    color: black;
 }
 
 .btn {
