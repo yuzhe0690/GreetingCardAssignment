@@ -103,7 +103,7 @@ td {
     color: #FFFFFF;
     text-align: center;
     padding: 1%;
-    width: 12%;
+    width: 15%;
     height: 20%;
     transition: all 0.5s;
     cursor: pointer;
@@ -239,7 +239,7 @@ td {
     .btn {
         width: 25%;
         height: 25%;
-        font-size: 0.6em;
+        font-size: 0.65em;
         flex-shrink: 1;
     }
 
