@@ -1,75 +1,85 @@
+/* styling for body */
 body, html {
     margin: 0%;
-    height: 100%;
+    height: 100%; /* Set height, used for parallax banner image */
     background-color: white;
 }
 
-
+/* Styling for anchor */
 a {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 0.8em;
     color: white;
-    text-align: center;
-    text-decoration: none;
+    text-align: center; /* centered text */
+    text-decoration: none; /* remove text underlining */
 }
 
+/* Styling for header 1 */
 h1 {
-    font-family: Consolas, monaco, monospace;
+    font-family: Consolas, monaco, monospace; /* Custom fonts for headers */
     font-size: 2em;
     text-align: center;
 }
 
+/* Styling for header 2, centered */
 h2 {
     font-family: Consolas, monaco, monospace;
     font-size: 1.75em;
     text-align: center;
 }
 
+/* Styling for paragraph */
 p {
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; /* Custom font for content*/
     font-size: 1.2em;
-    text-align: justify;
-    margin-left: auto;
+    text-align: justify; /* justify text */
+    margin-left: auto; /* auto horizontal margin to center paragraph */
     margin-right: auto;
-    width: 45%;
+    width: 45%; /* reduce width size of paragraph */
 }
 
+/* Styling for table data */
 td {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    display: block;
-    text-align: center;
-    margin-left: auto;
+    display: block; /* display as block for easier scalability and styling */
+    text-align: center; /* center text */
+    margin-left: auto; /* auto horizontal margin to center table */
     margin-right: auto;
-    padding-top: 20%;
+    padding-top: 20%; /* vertical margin set for spacing between row */
     padding-bottom: 20%;
-    overflow-x: auto;
+    overflow-x: auto; /* allow scrolling mechanism for overflow blocks */
     overflow-y: auto;
-    box-sizing: border-box;
-    flex-shrink: 1;
+    box-sizing: border-box; /* set border size to include margin and padding */
     font-size: 1.25em;
 }
 
+/* Styling for parallax effect banner image */
 #banner_home {
+    /* set background image */
     background-image: url("../IMG/home banner.jpg");
     
+    /* display as table for easier scalability */
     display: table;
-    margin-left: auto;
+    margin-left: auto; /* centers content */
     margin-right: auto;
-    height: 100%;
+    height: 100%; /* set width and height of the picture */
     width: 100%;
 
+    /* parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* Styling for header class */
 .header {
+    /* display content inside as table cell for easier scalability */
     display: table-cell;
-    color:white;
+    color:white; /* set font color as white */
     text-align: center;
     font-size: 2.5em;
-    vertical-align: middle;
+    vertical-align: middle; /* vertically allign text at the center */
 }
 
 /* For flex containers inside the 3 template boxes to sent a message */
@@ -94,119 +104,139 @@ td {
     color: black;
 }
 
+/* Styling for btn (button) class */
 .btn {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: black;
-    opacity: 75%;
-    border: none;
-    color: #FFFFFF;
+    display: inline-block; /* display as inline block for easier scalability and styling */
+    
+    background-color: black; /* Set background color of button to black */
+    opacity: 75%; /* change opacity of button */
+
+    /* rounded edges for button */
+    border-radius: 4px; /* Set border radius */
+    border: none; /*remove border */
+
+    color: #FFFFFF; 
     text-align: center;
-    padding: 1%;
-    width: 15%;
-    height: 20%;
+    padding: 1%; /* set padding of button at all 4 directions */
+    width: 15%; /* set wdith of the button */
+    height: 20%;/* set height of the button */
+    box-sizing: border-box;
+
+    /* hover button effects */
     transition: all 0.5s;
     cursor: pointer;
-    box-sizing: border-box;
     margin-left: 1%;
     margin-right: 1%;
 }
 
+/* span styling inside hover button */
 .btn span {
+    /* hover button effects */
     cursor: pointer;
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    transition: 0.5s;
+    transition: 0.5s; /* set trasition effect speed */
     
 }
-  
+
+/* span styling effect before hover */
 .btn span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
+    position: absolute; /* change position of text to be absolute */
+    opacity: 0; /* set oopacity to 0 to hide the text */
     top: 0;
     right: -20px;
-    transition: 0.5s;
+    transition: 0.5s; 
 }
-  
+
+/* hover button styling */
 .btn:hover {
     background-color: orange;
     box-sizing: border-box;
 }
 
+/* styling for home fact class (used for facts at home) */
 .home_fact {
-    display: table;
+    display: table; /* display as table for easier scalability and styling */
     margin-left: auto;
     margin-right: auto;
 }
 
+/* styling for home content */
 .home_content {
-    display: table-cell;
+    display: table-cell; /* display content as table cell */
     margin-left: auto;
     margin-right: auto;
-    flex-shrink: 1;
 }
 
+/* styling for image class (used for images) */
 .image {
-    display: block;
-    margin-left: auto;
+    display: block; /* display image as block for easier styling */
+    margin-left: auto; 
     margin-right: auto;
-    width: 35%;
-    padding-top: 2%;
+    width: 35%; /* set width of image */
+    padding-top: 2%; /* sadd vertical padding */
     padding-bottom: 2%;
 }
 
+/* template options class styling */
 .template_option {
-    margin-left: auto;
+    margin-left: auto; /* center contents insided this class */
     margin-right: auto;
 }
 
+/* image container class for image hover button */
 .image_container {
-    position: relative;
+    position: relative; /* set position of content to be relative */
     width: 100%;
 }
 
+/* set image button styling */
 .image_btn {
-    opacity: 1;
-    display: block;
+    opacity: 1; /*  */
+    display: block; /*  */
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    width: auto; /* set width of button to be auto size */
+    transition: .5s ease; /* set trasition effect speed, ease */
+    backface-visibility: hidden; /* hide backface */
 }
-  
+
+/* set hover button text styling */
 .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
+    transition: .5s ease; 
+    opacity: 0; /* hide text when not hover */
+    position: absolute; /* set position as absolute */
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%; 
+    transform: translate(-50%, -50%); /* center align text */
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-  
+
+/* styling of button when hover*/
 .image_container:hover .image_btn {
     opacity: 0.3;
 }
   
+/* styling of button text when hover */
 .image_container:hover .middle {
     opacity: 1;
 }
-  
+
+/* hover button styling*/
 .hover_btn{
     text-align: center;
     opacity: 0.75;
     background-color: orange;
     font-size: 1.25em;
-    padding: 16px 32px;
+    padding: 16px 32px; /* set hover button padding */
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box
 }
 
+/* styling for paragraph in home card class */
 .home_card p {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 1.2em;
@@ -215,15 +245,17 @@ td {
     margin-right: auto;
 }
 
+/* styling for to top button */
 .to_top {
     text-align: center;
     font-size: 1.5em;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 5%; /* vertical margin for spacing */
 }
 
+/* footer styling */
 .footer {
-    font-style: italic;
+    font-style: italic; /* set footer text to be italic */
     font-family: Consolas, monaco, monospace;
     font-size: 0.75em;
     text-align: center;
@@ -231,16 +263,17 @@ td {
 
 /* Responsive Design for Screen width lesser than 800 px*/
 @media only screen and (max-device-width: 800px)  {
+    /* paragraph styling on device with width lesser than 800px */
     p {
-        font-size: 1.25em;
-        width: 80%;
+        font-size: 1.25em; /* increase font size on smaller screen */
+        width: 80%; /* increase paragraph width on smaller screen */
     }
 
+    /* button styling on smaller screen */
     .btn {
-        width: 25%;
+        width: 25%; /* increased width and height */
         height: 25%;
-        font-size: 0.65em;
-        flex-shrink: 1;
+        font-size: 0.65em; /* reduced font size */
     }
 
     .flex-container {
@@ -252,11 +285,13 @@ td {
 
     }
 
+    /* image styling on smaller screen */
     .image {
-        width: 80%;
+        width: 80%; /* increased width on smaller devices */
     }
 
+    /* image hover button styling on smaller screen */
     .image_btn {
-        width: 90%;
-    }
+        width: 90%; /* increased button size */
+    } 
 }
