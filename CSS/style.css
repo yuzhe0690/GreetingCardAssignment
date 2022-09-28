@@ -56,7 +56,7 @@ td {
 /* Styling for parallax effect banner image */
 #banner_home {
     /* set background image */
-    background-image: url("../IMG/home banner.jpg");
+    background-image: url("../IMG/home\ banner\ \(2\).jpg");
     
     /* display as table for easier scalability */
     display: table;
@@ -82,27 +82,60 @@ td {
     vertical-align: middle; /* vertically allign text at the center */
 }
 
-/* For flex containers inside the 3 template boxes to sent a message */
-#flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* For flex containers inside the 3 template pages to sent a message */
+
+/* For flex containers inside the 3 template pages to sent a message */
+#flex-container { /* For The id in the template pages with the name "flex-container" */
+    /*Styling for navigation bar display */
+    display: flex; 
+    flex-direction: row; /* Allign items/buttons horizontally */
+    justify-content: center; /*Justify the button to the center of the nav bar */
     background-color: orange;
-
 }
 
-#flex-container>div {
+#flex-container>div { /*For the div tags nested under the div tag with the name "flex-container" */
+    /*Display for the buttons in the navigation bar */
+    display: inline-block; /* display as inline block for easier scalability and styling */
+    background-color: #ffdb99;    
+    padding: 1%; /* set padding of nav button on all 4 directions */
+    width: 30%; /* set wdith of the nav buttons */
+    height: 75%;  /* set height of the nav buttons */
     box-sizing: border-box;
-    background-color: #ffdb99;
+    position: relative; 
+
+    /* rounded edges for button */
+    border-radius: 4px; /* Set border radius */
+    border: none; /*remove border */
+    
+    /* Styling for the text inside the button */
+    text-align: center;  
+
+
+    /* hover button effects */
+    transition: all 0.5s;
+    cursor: pointer;
     margin: 1%;
-    padding: 1%;
-    font-size: 2em;
+    
 }
 
-#flex-container>div a {
+#flex-container>div a { /*For the anchor tag nested under div tag with the name "flex-container" */
+    /* Font Adjusments */  
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 1.75em;
+    text-align: center; /* centered text */
+    text-decoration: none; /* remove text underlining */ 
+    font-weight: bold;
     color: black;
+    flex-shrink: 1;
+
+    /* hover button effects */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1%;
+    
+    
 }
+
 
 /* Styling for btn (button) class */
 .btn {
@@ -294,4 +327,29 @@ td {
     .image_btn {
         width: 90%; /* increased button size */
     } 
+
+
+
+    #flex-container>div { /*For the div tags nested under the div tag with the name "flex-container" */
+        /*Display for the buttons in the navigation bar for smaller screen */
+        width: larger; /* set wdith of the nav buttons */
+        height: larger;  /* set height of the nav buttons */
+        box-sizing: border-box;
+        position: relative; 
+    
+        /* rounded edges for button */
+        border-radius: 2px; /* Readjusted border radius */
+        
+    }
+    
+    #flex-container>div a { /*For the anchor tag nested under div tag with the name "flex-container" */
+        /* Font Adjusments For Smaller Screen */  
+        font-size: larger;
+        flex-shrink: 1;
+        
+        
+    }
+
 }
+
+
