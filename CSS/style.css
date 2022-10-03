@@ -56,7 +56,7 @@ td {
 /* Styling for parallax effect banner image */
 #banner_home {
     /* set background image */
-    background-image: url("../IMG/home\ banner\ \(2\).jpg");
+    background-image: url("../IMG/home_banner.jpg");
     
     /* display as table for easier scalability */
     display: table;
