@@ -98,7 +98,7 @@ td {
     display: inline-block; /* display as inline block for easier scalability and styling */
     background-color: #ffdb99;    
     padding: 1%; /* set padding of nav button on all 4 directions */
-    width: 30%; /* set wdith of the nav buttons */
+    width: 30%; /* set width of the nav buttons */
     height: 75%;  /* set height of the nav buttons */
     box-sizing: border-box;
     position: relative; 
@@ -332,10 +332,8 @@ td {
 
     #flex-container>div { /*For the div tags nested under the div tag with the name "flex-container" */
         /*Display for the buttons in the navigation bar for smaller screen */
-        width: larger; /* set wdith of the nav buttons */
-        height: larger;  /* set height of the nav buttons */
-        box-sizing: border-box;
-        position: relative; 
+        width: 75%; /* set wdith of the nav buttons */
+        height: 100%;  /* set height of the nav buttons */
     
         /* rounded edges for button */
         border-radius: 2px; /* Readjusted border radius */
@@ -344,8 +342,7 @@ td {
     
     #flex-container>div a { /*For the anchor tag nested under div tag with the name "flex-container" */
         /* Font Adjusments For Smaller Screen */  
-        font-size: larger;
-        flex-shrink: 1;
+        font-size: 75%; /* resized fonts to make it scale to the anchor container */
         
         
     }
