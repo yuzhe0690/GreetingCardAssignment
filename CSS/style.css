@@ -151,8 +151,9 @@ td {
     color: #FFFFFF; 
     text-align: center;
     padding: 1%; /* set padding of button at all 4 directions */
-    width: 15%; /* set wdith of the button */
-    height: 20%;/* set height of the button */
+    min-width: 20%; /* set wdith of the button */
+    min-height: 22%;/* set height of the button */
+    max-height: 30%;
     box-sizing: border-box;
 
     /* hover button effects */
